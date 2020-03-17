@@ -20,6 +20,7 @@ class AuthorList extends Component {
         .toLowerCase()
         .includes(this.state.query)
     );
+
     const authorCards = filteredAuthors.map(author => (
       <AuthorCard key={author.first_name + author.last_name} author={author} />
     ));
